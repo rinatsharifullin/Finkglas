@@ -1,0 +1,819 @@
+
+/*------------------------------ Reset stylesheet -----------------------------------*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+
+/*-------------------------------------------------------- Base Style ---------------------------------------------------*/
+body {
+	font-size: 20px;
+	color: rgb(220,220,220);
+	line-height: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	background-color: #000;
+	box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+	color: #008000;
+	font-size: 1em;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {
+	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+	font-size: 2.2em;
+	padding: 1em 0 1em 0;
+}
+
+h3 {
+	font-size: 1.6em;
+	padding: 2rem 0;
+}
+
+p {
+	padding-bottom: 1em;
+	font-size: 1em;
+}
+
+
+  /*--- Wrapper ---*/
+.wrapper {
+	box-sizing: border-box;
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+}
+/*-------------------------------------------------------- End of Base Style ---------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------- Home page ----------------------------------------------------------------------------------*/
+
+/*--------------------------------- Slider ----------------------------------*/
+
+
+.slide {        
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center center;
+}
+
+.bb-slider {
+    width: 100%;
+    height: 100vh;
+    position: relative;   
+    overflow: hidden;
+}
+
+.bb-slide { 
+    width: 100%;
+    height: 100%;   
+    position: absolute;  
+    opacity: 0;
+    transition: opacity 600ms ease-in;    
+}
+
+.bb-slide.bb-active {
+    opacity: 0.75;
+}
+
+#home-slider .one {
+	background-color: green;
+	background-image: url(../images/home/image-slider-1-desktop.jpg);
+}
+
+#home-slider .two {
+	background-color: tomato;
+	background-image: url(../images/home/image-slider-2-desktop.jpg);
+}
+
+#home-slider .three {
+	background-color: teal;
+	background-image: url(../images/home/image-slider-3-desktop.jpg);
+}  
+
+#home-slider .four {
+	background-color: burlywood;
+	background-image: url(../images/home/image-slider-4-desktop.jpg);
+}  
+
+
+/*--------------------------------- End of Slider ----------------------------------*/
+
+/*------------------------------- Home page logo --------------------------------*/
+
+#titleBox {
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100vh;
+	-ms-clip-path: polygon(calc(100% - 30%) 0, 0 100%, 100% 100%, 100% 0);
+	clip-path: polygon(calc(100% - 30%) 0, 0 100%, 100% 100%, 100% 0);
+	z-index: 5;
+}
+
+#title {
+	text-align: right;
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	
+}
+#title h1 {
+	font-size: 4em;
+	font-family: 'Kaushan Script', cursive;
+	letter-spacing: 0.1em;
+
+}
+
+.ink {
+	color: #008000;
+}
+
+
+#title h2 {
+	font-size: 1.5em;
+	letter-spacing: 0.5em;
+	font-family: 'Raleway', arial, sans-serif;
+	font-weight: 200;
+	margin-top: 1em;
+	text-transform: uppercase;
+}
+
+#title p {
+	padding-top: 1.5em;
+	font-size: 1.3em;
+	padding: 1em 0 0 2em;
+	letter-spacing: 0.3rem;
+}
+/*-------------------------------End of Home page logo --------------------------------*/
+
+
+
+/*------------------------------- homeContent --------------------------------*/
+
+#homeContent {
+	background-color: #000;
+	border-top: 5px solid #008000;
+}
+
+#homeContent .wrapper {
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../images/home/home-content-image.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+#medical-caution, #advises-caution {
+	display: inline-flex;
+	justify-content: space-around;	
+}
+
+#medical-caution div, #advises-caution p {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 2em 2em 2em;
+}
+
+#medical-caution p {
+	padding-bottom: 0;
+}
+
+.safety p:nth-child(2) {
+	padding-bottom: 0;
+}
+
+
+/*---------------------------------------------------------------------	End of Home Page Style ---------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------Tattoo page --------------------------------------------------------------------------*/
+#tattooContent {
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/tattoo/woman-back-desktop.jpg) no-repeat;
+	background-size: cover;
+}
+
+#origin {
+	box-sizing: border-box;
+	margin-top: 10vh;
+	width: 100%;
+	padding: 2em;
+}
+
+#origin h1 {
+	padding-bottom: 1em;
+}
+
+.hub {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	margin: 2em 0;
+}
+
+.box {
+	width: 15em;
+	height: 15em;
+	background-color: rgb(220,220,220);
+	position: relative;
+	box-shadow: 5px 5px 5px #53555C;
+}
+
+#artistsBox {
+	background: url(../images/tattoo/Seanie.jpg) no-repeat;
+	background-size: cover;
+}
+
+#inkBox {
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/tattoo/ink-desktop.jpg) no-repeat; /*copyright*/ /* https://www.freepik.com/free-photos-vectors/table */
+	background-size: cover;
+}
+
+#coverBox {
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/tattoo/removal-desktop.png) no-repeat; /*copyright*/ /* https://www.flickr.com/photos/182760226@N05/48379170111/in/photolist-6pwE7p-vqFLzj-69rdiM-95p5a4-7aB5fm-95s8K3-Vh9Zcq-5uBdp8-6p9uA7-9LvBtA-87rJB2-6pgNTa-dnHx5a-dnHs5Z-eTezwJ-QAbDq1-2gH6TLB-77ceYe-2em6aVh-6p2mys-2em6aYy-2em6aZW-2em6aXm-MnyH55-2hohUD9-24bpCbt-fUU69e-2iePBrg-f3NVWD-dKirWf-kUfjcz-eL6DgK-kUfjUr-cLErA9-kUfVSa-kUfhHn-kUfmw4-2gYQFHY-kUgWiu-kUfY7F-kUfg6e-S73CtU-3ie2cZ-uTmGWL-htJR9-kUgTPb-LKUoVP-MEghGf-2dqHhpi-MzW1H8 */
+	background-size: cover;
+}
+
+.tattooBtn:link, .tattooBtn:visited {
+	display: block;
+	width: 80%;
+	background-color: #008000;
+	color: rgb(220,220,220);
+	font-size: 1em;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0.5em;
+	box-shadow: 2px 2px 2px #52555C;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.tattooBtn:hover, .tattooBtn:focus, .download:link, .download:focus {
+	background-color: #00b300;
+}
+
+/*------------------------------------------------------------------------ End of Tattoo page -----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------Artists page --------------------------------------------------------------------------*/
+
+
+#artistsContent
+{
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/artists/joseph-ngabo-unsplash.jpg) no-repeat;
+	background-size: cover;
+}
+
+#artist1Box
+{
+	margin-top: 5em;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/artists/Stevo.jpg) no-repeat;
+	background-size: cover;
+}
+
+#artist2Box
+{
+	margin-top: 5em;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/artists/Seanie.jpg) no-repeat;
+	background-size: cover;
+}
+
+#artist3Box
+{
+	margin-top: 5em;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/artists/Simona.jpg) no-repeat;
+	background-size: cover;
+}
+
+#artist4Box
+{
+	margin-top: 5em;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/artists/Rodolfo.jpg) no-repeat;
+	background-size: cover;
+}
+
+
+#artistsContent .wrapper .hub p{margin-top:5em; width:50%; padding: 1em;}
+
+
+
+
+/*------------------------------------------------------------------------ End of Artists page -----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------ ink & removal pages -----------------------------------------------------------------*/
+
+#remove
+{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/removal/remove_bg.jpg);
+    background-size: cover;
+}
+
+#ink_equipment
+{
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/ink/ink_bg.jpg);
+    background-size: cover;
+}
+
+.content_wrapper
+{
+	padding-top:3em;
+}
+
+.content_wrapper > *
+{
+    padding:1em;
+}
+
+.content_wrapper h1
+{
+    padding: 2em 0 0 0;
+}
+
+.content_wrapper h2
+{
+    font-size: 2em;
+}
+
+.content_wrapper article h1
+{
+	margin-top: 0.5em;
+}
+.content_wrapper article h1, .content_wrapper article h2
+{
+    padding: 1em 0;
+}
+
+.content_wrapper .hub
+{
+	margin-top: 0;
+}
+
+.content_wrapper article div p
+{
+	width:60%;
+ }
+ 
+.content_wrapper article a, .safety a
+{
+	font-weight: bold;
+	color:#00b300;
+ }
+ 
+#theinkBox
+{
+	background:url(../images/ink/ink.jpg) no-repeat;/*https://www.freepik.com/free-photos-vectors/table */
+	background-size: cover;
+}
+
+#machineBox
+{
+	background:url(../images/ink/tattoo_machine.jpg) no-repeat;
+	background-size: cover;
+}
+
+#coveringBox
+{
+	background:url(../images/removal/cover_tattoo.jpg) no-repeat;
+	background-size: cover;
+}
+
+#removalBox
+{
+	background:url(../images/removal/laser_remove.png) no-repeat; /*<!-- https://www.flickr.com/photos/182760226@N05/48379170111/in/photolist-6pwE7p-vqFLzj-69rdiM-95p5a4-7aB5fm-95s8K3-Vh9Zcq-5uBdp8-6p9uA7-9LvBtA-87rJB2-6pgNTa-dnHx5a-dnHs5Z-eTezwJ-QAbDq1-2gH6TLB-77ceYe-2em6aVh-6p2mys-2em6aYy-2em6aZW-2em6aXm-MnyH55-2hohUD9-24bpCbt-fUU69e-2iePBrg-f3NVWD-dKirWf-kUfjcz-eL6DgK-kUfjUr-cLErA9-kUfVSa-kUfhHn-kUfmw4-2gYQFHY-kUgWiu-kUfY7F-kUfg6e-S73CtU-3ie2cZ-uTmGWL-htJR9-kUgTPb-LKUoVP-MEghGf-2dqHhpi-MzW1H8 -->*/
+	background-size: cover;
+}
+/*------------------------------------------------------------------------ End of ink & removal pages -----------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------------- Gallery page --------------------------------------------------------------------*/
+
+.background{
+
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/gallery/gallerybackground.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 15vh 0 7vh 0;
+}
+
+/*Whole content container styling*/
+#gallery-content .wrapper{
+	padding:1.5vh;
+	background-color:#fff;
+}
+/*Gallery of 8 pictures for lightbox styling*/
+.image-gallery{
+	display:grid;
+	grid-template-columns: auto auto auto auto  ;
+	grid-template-rows:auto;
+	grid-gap:1.5vh;
+	grid-template-areas:'img1 img2 img3 img3'
+						'img1 img4 img5 img6'
+						'img7 img7 img8 img6';
+}
+.image-gallery a{
+	width:100%;
+	height:25vh;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	position:relative;
+	align-items:center;
+	justify-content:center;
+	text-decoration:none;
+	color:#fff;
+	text-align:center;
+}
+
+.image-gallery a::before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-color:rgba(0,0,0,1);
+	opacity:0.3;
+	transition:opacity 0.5s;
+}
+
+.image-gallery a:hover::before{
+	opacity:0;
+}
+
+/*Tumbnails pictures adding to gallery and styling*/
+.img1{
+	grid-area:img1;
+	min-height:51.5vh;
+	background-image:url("../images/gallery/aftercare/balm-sm.jpg");
+	
+}
+.img2{
+	grid-area:img2;
+	background-image:url("../images/gallery/artists/rodolfo.jpg");
+	
+}
+.img3{
+	grid-area:img3;
+	background-image:url("../images/gallery/ink_equipment/ink.jpg");
+}
+.img4{
+	grid-area:img4;
+	background-image:url("../images/gallery/removal/cover_tattoo.jpg");
+	
+}
+.img5{
+	grid-area:img5;
+	background-image:url("../images/gallery/celtictattoo/arm1-sml.jpg");
+}
+.img6{
+	grid-area:img6;
+	min-height:51.5vh;
+	background-image:url("../images/gallery/japanese/back-sml.jpg");
+}
+.img7{
+	grid-area:img7;
+	background-image:url("../images/gallery/realistic/elbow-sml.jpg");
+}
+.img8{
+	grid-area:img8;
+	background-image:url("../images/gallery/traditional/neck-sml.jpg");
+}
+
+
+
+/*------------------------------------------------------------------------ Aftercare page ----------------------------------------------------------------------*/
+
+/*All content styling*/ 
+#aftercareContent
+{
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../images/aftercare/aftercarebackground.jpg) no-repeat;
+	background-size: cover;
+}
+
+/*Images styling*/
+#aftercare1Box
+{
+	margin-top: 5em;
+	background:url(../images/gallery/aftercare/hands.jpg) no-repeat;
+	background-size: cover;
+}
+
+#aftercare2Box
+{
+	margin-top: 5em;
+	background: url(../images/gallery/aftercare/balm.jpg) no-repeat;
+	background-size: cover;
+}
+
+#aftercare3Box
+{
+	margin-top: 5em;
+	background:  url(../images/gallery/aftercare/cream.jpg) no-repeat;
+	background-size: cover;
+}
+
+#aftercare4Box
+{
+	margin-top: 5em;
+	background: url(../images/gallery/aftercare/arm.jpg) no-repeat;
+	background-size: cover;
+}
+
+/*Image h1 and p styling for each paragraph*/
+
+
+.hub h1{
+	padding-bottom: .5em; 
+	font-size:1.7em;
+}
+
+.content, .aftercare{
+	margin-top:5em; 
+	width:50%; 
+}
+
+/*Attention paragraph styling*/
+.aftercare{
+	margin:auto;
+}
+
+.aftercare li{
+	text-align:left;
+	list-style-position: inside;
+	list-style-type: square;
+}
+/*PDF download button styling*/
+.download:link, .download:visited{
+	background-color:green;
+	color:rgb(220,220,220);
+	padding:0.4em 1em;
+	border-radius:5px;
+	cursor:pointer;
+	box-shadow:2px 2px 2px #52555c;
+}
+
+/*------------------------------------------------------------------------ End of Aftercare page ----------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------ Contacts page -----------------------------------------------------------------*/
+
+#contact-content
+{
+background :  linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(../images/contact/artist-working-on-drawing.jpg) no-repeat;
+background-size: cover;
+}
+
+#column1, #column2 { width: 50%; padding: 15vh 0 0 0; }
+
+
+#map{height: 23em; width: 30em;}
+
+/*styling input fields*/
+
+form {width: 75%;}
+
+
+ #name, #email, #phone, #prefart, #message, #butn 
+{ 
+background-color:rgba(0, 0, 0, 0);
+color:rgb(220,220,220);
+border: 2px solid #52555c;
+height:4em;
+width: 90%;
+} 
+
+#name {margin-top: 0;}
+
+
+/*change border colour of input boxes on focus*/
+#name:focus, #email:focus, #phone:focus, #prefart:focus, #message:focus {outline: none; border-color: #008000; }
+form textarea{ resize: none;}
+#message {height: 20em;}
+#butn {width: 15em; border: none;  background-color: #008000;}
+#butn:hover, #butn:focus {background-color: #00b300;}
+
+
+#butn {transition: all 0.5s; font-family: 'Raleway', sans-serif;}
+/*------------------------------------------------------------------------ End of Contacts page -----------------------------------------------------------------*/
+
+
+/*--------------------------------- Footer ---------------------------------*/
+
+footer {
+	background-color: #000;
+	border-top: 5px solid #008000;
+	height: 7vh;
+	text-align: center;
+	line-height: 7vh;
+	font-weight: bold;
+}
+
+.copyright p {
+	color: #fff;
+	padding-bottom: 0;
+}
+
+.copyright span {
+	color: #008000;
+}
+
+/*--------------------------------- End of Footer ---------------------------------*/
+
+
+/*--------------------------------- media queries max-width: 768px ---------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+	.wrapper{
+		width: 100%;
+	} 
+ /* home page */
+	#home-slider .three {
+		background-position: left;
+	}  
+
+	#title{
+		/*transform: rotate(-90deg);*/
+		top: 50%;
+		text-align: center;	
+		transform: translateX(15%) rotate(-90deg);	
+	}
+
+	#title h1{
+		font-size: 2.5em;
+	}
+
+	#title h2{
+		padding: 0 0 0 .5em;
+		font-size: 1.2em;
+	}
+
+	#title p{
+		display: none;
+	}
+	
+	.hub, #medical-caution, #advises-caution {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	
+	/* tattoo page */
+	.box {
+		margin-bottom: 2em;
+	}
+	
+	/* artist page */
+	
+	#artist2Box, #artist4Box{order:-1;}
+	
+	
+	/* aftercare page */
+	
+	#aftercare1Box, #aftercare3Box{
+		order: 1;
+	}
+
+	.wrapper-aftercare, .content, .aftercare{
+		width: 100%;
+	}
+	
+	/* ink & removal pages */
+
+	#removalBox, #machineBox
+	{
+		order:-1;
+	}
+	
+	.content_wrapper article div p
+	{
+		width:100%;
+	}
+
+	.content_wrapper h2
+	{
+	font-size:1.75em;
+	}
+
+	/* Gallery page*/
+	
+	.image-gallery{
+		grid-template-areas:'img1 img1 img2 img2'
+							'img1 img1 img3 img3'
+							'img4 img4 img5 img5'
+							'img6 img7 img7 img7'
+							'img8 img8 img8 img8';
+	}
+	.container{
+		max-width:80vw;
+		position:relative;
+		top:8vh;
+	}
+	.image-gallery a{
+		height:15vh;
+	}
+	.img1{
+		min-height:31.5vh;
+	}
+	.img6{
+		min-height:15vh;
+	}
+	
+	/* contact page */
+	
+	form {width: 100%;}
+	
+	#map{width:100%;}
+}
+
+
+/*--------------------------------- media queries max-width: 360px ---------------------------------*/
+
+@media screen and (max-width: 480px) {
+
+	body {
+		font-size: 16px;
+	}
+
+	/* home page */
+	#title{
+		transform: translateX(22%) rotate(-90deg);
+	}
+
+	#origin h1{
+		font-size: 1.5em;
+		padding-top: 1em;
+	}
+
+	#medical-caution div, #advises-caution p, .content, .aftercare, #column1, #column2, #artistsContent .wrapper .hub p {
+		width: 100%;
+	}
+
+	/* gallery page*/
+	
+	.image-gallery{
+		grid-template-areas:'img1 img1 img1 img1'
+							'img2 img2 img2 img2'
+							'img3 img3 img3 img3'
+							'img4 img4 img4 img4'
+							'img5 img5 img5 img5'
+							'img6 img6 img6 img6'
+							'img7 img7 img7 img7'
+							'img8 img8 img8 img8';
+	}
+	.container{
+		max-width:100vw;
+		top:0;
+	}
+	.image-gallery a, .img1, .img6{
+		min-height:30vh;
+		height:30vh;
+	}
+	
+/* contact page */
+
+	#name, #email, #phone, #prefart, #message, #butn {width: 19em;}
+	
+	#butn {width: 80%;}
+	
+	#map {width:100%;}
+}
+/*--------------------------------- End of Media queries ---------------------------------*/
